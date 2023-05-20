@@ -1,0 +1,288 @@
+object Form5: TForm5
+  Left = 0
+  Top = 0
+  Caption = 'Form5'
+  ClientHeight = 496
+  ClientWidth = 923
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 73
+    Top = 190
+    Width = 69
+    Height = 19
+    Caption = 'Kay'#305't No'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 96
+    Top = 230
+    Width = 22
+    Height = 19
+    Caption = 'Ad'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 85
+    Top = 274
+    Width = 49
+    Height = 19
+    Caption = 'Soyad'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 55
+    Top = 310
+    Width = 101
+    Height = 19
+    Caption = 'Kullan'#305'c'#305' Ad'#305
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 96
+    Top = 350
+    Width = 38
+    Height = 19
+    Caption = #350'ifre'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 55
+    Top = 390
+    Width = 110
+    Height = 19
+    Caption = 'Do'#287'um Tarihi'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object DBGrid1: TDBGrid
+    Left = 8
+    Top = 8
+    Width = 569
+    Height = 161
+    DataSource = DataSource1
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'Kay'#305't No'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Ad'
+        Width = 62
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Soyad'
+        Width = 60
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Kullan'#305'c'#305' Ad'#305
+        Width = 83
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = #350'ifre'
+        Width = 84
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Do'#287'um Tarihi'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Profil Resmi'
+        Visible = True
+      end>
+  end
+  object Button1: TButton
+    Left = 616
+    Top = 156
+    Width = 75
+    Height = 25
+    Caption = 'Geri'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 616
+    Top = 125
+    Width = 75
+    Height = 25
+    Caption = #304'leri'
+    TabOrder = 2
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 616
+    Top = 94
+    Width = 75
+    Height = 25
+    Caption = 'G'#252'ncelle'
+    TabOrder = 3
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 616
+    Top = 63
+    Width = 75
+    Height = 25
+    Caption = 'Sil'
+    TabOrder = 4
+    OnClick = Button4Click
+  end
+  object Button5: TButton
+    Left = 616
+    Top = 32
+    Width = 75
+    Height = 25
+    Caption = 'Ekle'
+    TabOrder = 5
+    OnClick = Button5Click
+  end
+  object DBEdit1: TDBEdit
+    Left = 184
+    Top = 192
+    Width = 121
+    Height = 21
+    DataField = 'Kay'#305't No'
+    DataSource = DataSource1
+    TabOrder = 6
+  end
+  object DBEdit2: TDBEdit
+    Left = 184
+    Top = 232
+    Width = 121
+    Height = 21
+    DataField = 'Ad'
+    DataSource = DataSource1
+    TabOrder = 7
+  end
+  object DBEdit3: TDBEdit
+    Left = 184
+    Top = 272
+    Width = 121
+    Height = 21
+    DataField = 'Soyad'
+    DataSource = DataSource1
+    TabOrder = 8
+  end
+  object DBEdit4: TDBEdit
+    Left = 184
+    Top = 312
+    Width = 121
+    Height = 21
+    DataField = 'Kullan'#305'c'#305' Ad'#305
+    DataSource = DataSource1
+    TabOrder = 9
+  end
+  object DBEdit5: TDBEdit
+    Left = 184
+    Top = 352
+    Width = 121
+    Height = 21
+    DataField = #350'ifre'
+    DataSource = DataSource1
+    TabOrder = 10
+  end
+  object DBEdit6: TDBEdit
+    Left = 184
+    Top = 392
+    Width = 121
+    Height = 21
+    DataField = 'Do'#287'um Tarihi'
+    DataSource = DataSource1
+    TabOrder = 11
+  end
+  object DBImage1: TDBImage
+    Left = 448
+    Top = 240
+    Width = 105
+    Height = 105
+    DataField = 'Profil Resmi'
+    DataSource = DataSource1
+    Stretch = True
+    TabOrder = 12
+  end
+  object ADOConnection1: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=Microsoft.Jet.OLEDB.4.0;User ID=Admin;Data Source=ekran' +
+      'kartlar'#305'.mdb;Mode=Share Deny None;Persist Security Info=False;Je' +
+      't OLEDB:System database="";Jet OLEDB:Registry Path="";Jet OLEDB:' +
+      'Database Password="";Jet OLEDB:Engine Type=5;Jet OLEDB:Database ' +
+      'Locking Mode=1;Jet OLEDB:Global Partial Bulk Ops=2;Jet OLEDB:Glo' +
+      'bal Bulk Transactions=1;Jet OLEDB:New Database Password="";Jet O' +
+      'LEDB:Create System Database=False;Jet OLEDB:Encrypt Database=Fal' +
+      'se;Jet OLEDB:Don'#39't Copy Locale on Compact=False;Jet OLEDB:Compac' +
+      't Without Replica Repair=False;Jet OLEDB:SFP=False'
+    LoginPrompt = False
+    Mode = cmShareDenyNone
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
+    Left = 784
+    Top = 336
+  end
+  object ADOTable1: TADOTable
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    TableName = 'kullan'#305'c'#305'lar'
+    Left = 752
+    Top = 376
+  end
+  object DataSource1: TDataSource
+    DataSet = ADOTable1
+    Left = 744
+    Top = 336
+  end
+end

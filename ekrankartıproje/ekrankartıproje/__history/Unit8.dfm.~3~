@@ -1,0 +1,63 @@
+object Form8: TForm8
+  Left = 0
+  Top = 0
+  BorderStyle = bsNone
+  Caption = 'Form8'
+  ClientHeight = 205
+  ClientWidth = 471
+  Color = clHotLight
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 56
+    Top = 8
+    Width = 365
+    Height = 25
+    Caption = 'EKRAN KARTI SORGU S'#304'STEMLER'#304
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 8
+    Top = 136
+    Width = 204
+    Height = 19
+    Caption = 'Made By Furkan U'#286'URLU'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 328
+    Top = 185
+    Width = 136
+    Height = 16
+    Caption = 'B'#252't'#252'n Haklar'#305' Sakl'#305'd'#305'r'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Timer1: TTimer
+    Interval = 3000
+    OnTimer = Timer1Timer
+    Left = 592
+    Top = 208
+  end
+end

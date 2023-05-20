@@ -1,0 +1,222 @@
+﻿object Form4: TForm4
+  Left = 0
+  Top = 0
+  Caption = 'Form4'
+  ClientHeight = 325
+  ClientWidth = 519
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 83
+    Top = 70
+    Width = 22
+    Height = 19
+    Caption = 'Ad'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 56
+    Top = 112
+    Width = 49
+    Height = 19
+    Caption = 'Soyad'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 41
+    Top = 154
+    Width = 101
+    Height = 19
+    Caption = 'Kullan'#305'c'#305' Ad'#305
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 310
+    Top = 32
+    Width = 123
+    Height = 19
+    Caption = 'Profil Foto'#287'raf'#305
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 67
+    Top = 192
+    Width = 38
+    Height = 19
+    Caption = #350'ifre'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 32
+    Top = 238
+    Width = 110
+    Height = 19
+    Caption = 'Do'#287'um Tarihi'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object DBEdit1: TDBEdit
+    Left = 162
+    Top = 72
+    Width = 121
+    Height = 21
+    DataField = 'Ad'
+    DataSource = DataSource1
+    TabOrder = 0
+  end
+  object DBEdit2: TDBEdit
+    Left = 162
+    Top = 114
+    Width = 121
+    Height = 21
+    DataField = 'Soyad'
+    DataSource = DataSource1
+    TabOrder = 1
+  end
+  object DBEdit3: TDBEdit
+    Left = 162
+    Top = 156
+    Width = 121
+    Height = 21
+    DataField = 'Kullan'#305'c'#305' Ad'#305
+    DataSource = DataSource1
+    TabOrder = 2
+  end
+  object DBImage1: TDBImage
+    Left = 320
+    Top = 72
+    Width = 105
+    Height = 105
+    DataField = 'Profil Resmi'
+    DataSource = DataSource1
+    Stretch = True
+    TabOrder = 3
+  end
+  object DBEdit4: TDBEdit
+    Left = 162
+    Top = 197
+    Width = 121
+    Height = 21
+    DataField = #350'ifre'
+    DataSource = DataSource1
+    PasswordChar = '*'
+    TabOrder = 4
+  end
+  object DBEdit5: TDBEdit
+    Left = 162
+    Top = 240
+    Width = 121
+    Height = 21
+    DataField = 'Do'#287'um Tarihi'
+    DataSource = DataSource1
+    TabOrder = 5
+  end
+  object Button1: TButton
+    Left = 275
+    Top = 296
+    Width = 75
+    Height = 25
+    Caption = 'Kaydet'
+    TabOrder = 6
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 424
+    Top = 296
+    Width = 89
+    Height = 25
+    Caption = 'Profil G'#252'ncelleme'
+    TabOrder = 7
+    OnClick = Button2Click
+  end
+  object ADOTable1: TADOTable
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    TableName = 'kullan'#305'c'#305'lar'
+    Left = 472
+    Top = 128
+    object ADOTable1Ad: TWideStringField
+      FieldName = 'Ad'
+      Size = 255
+    end
+    object ADOTable1Soyad: TWideStringField
+      FieldName = 'Soyad'
+      Size = 255
+    end
+    object ADOTable1KullanıcıAdı: TWideStringField
+      FieldName = 'Kullan'#305'c'#305' Ad'#305
+      Size = 255
+    end
+    object ADOTable1Şifre: TWideStringField
+      FieldName = #350'ifre'
+      Size = 255
+    end
+    object ADOTable1DoğumTarihi: TDateTimeField
+      FieldName = 'Do'#287'um Tarihi'
+    end
+    object ADOTable1ProfilResmi: TBlobField
+      FieldName = 'Profil Resmi'
+    end
+  end
+  object ADOConnection1: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=Microsoft.Jet.OLEDB.4.0;User ID=Admin;Data Source=ekran' +
+      'kartlar'#305'.mdb;Mode=Share Deny None;Persist Security Info=False;Je' +
+      't OLEDB:System database="";Jet OLEDB:Registry Path="";Jet OLEDB:' +
+      'Database Password="";Jet OLEDB:Engine Type=5;Jet OLEDB:Database ' +
+      'Locking Mode=1;Jet OLEDB:Global Partial Bulk Ops=2;Jet OLEDB:Glo' +
+      'bal Bulk Transactions=1;Jet OLEDB:New Database Password="";Jet O' +
+      'LEDB:Create System Database=False;Jet OLEDB:Encrypt Database=Fal' +
+      'se;Jet OLEDB:Don'#39't Copy Locale on Compact=False;Jet OLEDB:Compac' +
+      't Without Replica Repair=False;Jet OLEDB:SFP=False'
+    LoginPrompt = False
+    Mode = cmShareDenyNone
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
+    Left = 488
+    Top = 80
+  end
+  object DataSource1: TDataSource
+    DataSet = ADOTable1
+    Left = 464
+    Top = 192
+  end
+end

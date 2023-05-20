@@ -1,0 +1,97 @@
+unit Unit3;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls,
+  Vcl.Imaging.jpeg, Data.DB, Data.Win.ADODB;
+
+type
+  TForm3 = class(TForm)
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Button1: TButton;
+    Button2: TButton;
+    Image1: TImage;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    Button3: TButton;
+    ADOQuery1: TADOQuery;
+    DataSource1: TDataSource;
+    Button4: TButton;
+    Button5: TButton;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
+    procedure Button5Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form3: TForm3;
+
+implementation
+
+{$R *.dfm}
+
+   uses unit1,unit4,unit5,unit6,unit7;
+procedure TForm3.Button1Click(Sender: TObject);
+begin
+if (edit1.Text='admin') AND (edit2.Text='admin')then
+       begin
+        ShowMessage('Admin Giriþi Baþarýlý');
+         form7.Show;
+
+
+       end else
+  begin
+    ShowMessage('Hatalý Giriþ');
+    close;
+  end;
+end;
+
+procedure TForm3.Button2Click(Sender: TObject);
+begin
+form4.Show;
+end;
+
+
+procedure TForm3.Button3Click(Sender: TObject);
+begin
+
+ADOQuery1.Close;
+ADOQuery1.SQL.Text:='select * from kullanýcýlar where `Kullanýcý Adý`='+#39+Edit1.Text+#39+'and Þifre='+#39+Edit2.Text+#39;
+ADOQuery1.Open;
+
+if ADOQuery1.RecordCount > 0 then
+begin
+
+  ShowMessage('Kullanýcý Giriþi Baþarýlý !');
+  form3.Visible:=false;
+  form1.Show;
+  end else
+  begin
+    ShowMessage('Hatalý Giriþ');
+    close;
+  end;
+
+end;
+
+
+procedure TForm3.Button4Click(Sender: TObject);
+begin
+ShowMessage('Profilinizi Düzenlemeniz Ýçin Admin Ýle Ýletiþime Geçmelisiniz!');
+end;
+
+procedure TForm3.Button5Click(Sender: TObject);
+begin
+ShowMessage('Admin Giriþi = Kullanýcý Adý "Admin" Þifre "Admin"');
+end;
+
+END.

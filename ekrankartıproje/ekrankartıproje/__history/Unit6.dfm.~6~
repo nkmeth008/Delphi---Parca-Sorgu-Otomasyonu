@@ -1,0 +1,454 @@
+﻿object Form6: TForm6
+  Left = 0
+  Top = 0
+  Caption = 'Form6'
+  ClientHeight = 728
+  ClientWidth = 1122
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 32
+    Top = 266
+    Width = 66
+    Height = 19
+    Caption = #220'r'#252'n No'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 32
+    Top = 304
+    Width = 51
+    Height = 19
+    Caption = 'Marka'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 34
+    Top = 344
+    Width = 49
+    Height = 19
+    Caption = 'Model'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 32
+    Top = 384
+    Width = 51
+    Height = 19
+    Caption = 'Bellek'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 12
+    Top = 424
+    Width = 86
+    Height = 19
+    Caption = #220'retici Ad'#305
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 12
+    Top = 462
+    Width = 87
+    Height = 19
+    Caption = #220'retim Y'#305'l'#305
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 43
+    Top = 502
+    Width = 40
+    Height = 19
+    Caption = 'Fiyat'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label8: TLabel
+    Left = 303
+    Top = 264
+    Width = 36
+    Height = 19
+    Caption = 'Bilgi'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label9: TLabel
+    Left = 808
+    Top = 239
+    Width = 50
+    Height = 19
+    Caption = 'Resim'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label10: TLabel
+    Left = 271
+    Top = 466
+    Width = 65
+    Height = 19
+    Caption = #304'kinci El'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label11: TLabel
+    Left = 303
+    Top = 424
+    Width = 33
+    Height = 19
+    Caption = 'S'#305'f'#305'r'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object DBText1: TDBText
+    Left = 360
+    Top = 269
+    Width = 105
+    Height = 134
+    DataField = 'Bilgi'
+    DataSource = DataSource1
+  end
+  object DBGrid1: TDBGrid
+    Left = 8
+    Top = 8
+    Width = 721
+    Height = 241
+    DataSource = DataSource1
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = #220'r'#252'n No'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Marka'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Model'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Bellek'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = #220'retici Ad'#305
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = #220'retim Y'#305'l'#305
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'S'#305'f'#305'r'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = #304'kinci El'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Fiyat'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Bilgi'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Resim'
+        Visible = True
+      end>
+  end
+  object Button1: TButton
+    Left = 24
+    Top = 576
+    Width = 75
+    Height = 25
+    Caption = 'Geri'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 118
+    Top = 576
+    Width = 75
+    Height = 25
+    Caption = #304'leri'
+    TabOrder = 2
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 216
+    Top = 576
+    Width = 75
+    Height = 25
+    Caption = 'G'#252'ncelle'
+    TabOrder = 3
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 310
+    Top = 576
+    Width = 75
+    Height = 25
+    Caption = 'Ekle'
+    TabOrder = 4
+    OnClick = Button4Click
+  end
+  object Button5: TButton
+    Left = 406
+    Top = 576
+    Width = 75
+    Height = 25
+    Caption = 'Sil'
+    TabOrder = 5
+    OnClick = Button5Click
+  end
+  object DBEdit1: TDBEdit
+    Left = 128
+    Top = 266
+    Width = 121
+    Height = 21
+    DataField = #220'r'#252'n No'
+    DataSource = DataSource1
+    TabOrder = 6
+  end
+  object DBEdit2: TDBEdit
+    Left = 128
+    Top = 306
+    Width = 121
+    Height = 21
+    DataField = 'Marka'
+    DataSource = DataSource1
+    TabOrder = 7
+  end
+  object DBEdit3: TDBEdit
+    Left = 128
+    Top = 346
+    Width = 121
+    Height = 21
+    DataField = 'Model'
+    DataSource = DataSource1
+    TabOrder = 8
+  end
+  object DBEdit4: TDBEdit
+    Left = 128
+    Top = 386
+    Width = 121
+    Height = 21
+    DataField = 'Bellek'
+    DataSource = DataSource1
+    TabOrder = 9
+  end
+  object DBEdit5: TDBEdit
+    Left = 128
+    Top = 426
+    Width = 121
+    Height = 21
+    DataField = #220'retici Ad'#305
+    DataSource = DataSource1
+    TabOrder = 10
+  end
+  object DBEdit6: TDBEdit
+    Left = 128
+    Top = 464
+    Width = 121
+    Height = 21
+    DataField = #220'retim Y'#305'l'#305
+    DataSource = DataSource1
+    TabOrder = 11
+  end
+  object DBEdit7: TDBEdit
+    Left = 128
+    Top = 504
+    Width = 121
+    Height = 21
+    DataField = 'Fiyat'
+    DataSource = DataSource1
+    TabOrder = 12
+  end
+  object DBImage1: TDBImage
+    Left = 520
+    Top = 264
+    Width = 522
+    Height = 337
+    DataField = 'Resim'
+    DataSource = DataSource1
+    Stretch = True
+    TabOrder = 13
+  end
+  object DBCheckBox1: TDBCheckBox
+    Left = 360
+    Top = 428
+    Width = 97
+    Height = 17
+    Caption = 'DBCheckBox1'
+    DataField = 'S'#305'f'#305'r'
+    DataSource = DataSource1
+    TabOrder = 14
+  end
+  object DBCheckBox2: TDBCheckBox
+    Left = 360
+    Top = 466
+    Width = 97
+    Height = 17
+    Caption = 'DBCheckBox2'
+    DataField = #304'kinci El'
+    DataSource = DataSource1
+    TabOrder = 15
+  end
+  object DBEdit8: TDBEdit
+    Left = 872
+    Top = 55
+    Width = 121
+    Height = 148
+    DataField = 'Bilgi'
+    DataSource = DataSource1
+    TabOrder = 16
+  end
+  object ADOConnection1: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=Microsoft.Jet.OLEDB.4.0;User ID=Admin;Data Source=C:\Us' +
+      'ers\Furkan\Desktop\Uygulama Dosyalar'#305'\delphiproje\ekrankartlar'#305'.' +
+      'mdb;Mode=Share Deny None;Persist Security Info=False;Jet OLEDB:S' +
+      'ystem database="";Jet OLEDB:Registry Path="";Jet OLEDB:Database ' +
+      'Password="";Jet OLEDB:Engine Type=5;Jet OLEDB:Database Locking M' +
+      'ode=1;Jet OLEDB:Global Partial Bulk Ops=2;Jet OLEDB:Global Bulk ' +
+      'Transactions=1;Jet OLEDB:New Database Password="";Jet OLEDB:Crea' +
+      'te System Database=False;Jet OLEDB:Encrypt Database=False;Jet OL' +
+      'EDB:Don'#39't Copy Locale on Compact=False;Jet OLEDB:Compact Without' +
+      ' Replica Repair=False;Jet OLEDB:SFP=False'
+    LoginPrompt = False
+    Mode = cmShareDenyNone
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
+    Left = 928
+    Top = 608
+  end
+  object ADOTable1: TADOTable
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    TableName = 'ekrankartlar'#305
+    Left = 872
+    Top = 608
+    object ADOTable1ÜrünNo: TAutoIncField
+      FieldName = #220'r'#252'n No'
+      ReadOnly = True
+    end
+    object ADOTable1Marka: TWideStringField
+      FieldName = 'Marka'
+    end
+    object ADOTable1Model: TWideStringField
+      FieldName = 'Model'
+      Size = 10
+    end
+    object ADOTable1Bellek: TWideStringField
+      FieldName = 'Bellek'
+      Size = 10
+    end
+    object ADOTable1ÜreticiAdı: TWideStringField
+      FieldName = #220'retici Ad'#305
+      Size = 15
+    end
+    object ADOTable1ÜretimYılı: TDateTimeField
+      FieldName = #220'retim Y'#305'l'#305
+    end
+    object ADOTable1Sıfır: TBooleanField
+      FieldName = 'S'#305'f'#305'r'
+    end
+    object ADOTable1İkinciEl: TBooleanField
+      FieldName = #304'kinci El'
+    end
+    object ADOTable1Fiyat: TBCDField
+      FieldName = 'Fiyat'
+      Precision = 19
+    end
+    object ADOTable1Bilgi: TWideMemoField
+      FieldName = 'Bilgi'
+      BlobType = ftWideMemo
+    end
+    object ADOTable1Resim: TBlobField
+      FieldName = 'Resim'
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = ADOTable1
+    Left = 992
+    Top = 608
+  end
+end
